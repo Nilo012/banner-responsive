@@ -1,17 +1,7 @@
 /*==========0 GOOGLE FONTS ===========*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-}
+
 :root {
   --header-height: 3.5rem;
 
@@ -31,6 +21,9 @@
 }
 body {
   background: var(--body-color);
+}
+.section {
+  padding-block: 5rem 1rem;
 }
 .banner {
   background-image: url(../img/banner.jpg);
@@ -59,6 +52,6 @@ body {
   padding-inline: 5rem;
 }
 .banner__title {
-  font-size: 3rem;
+  font-size: rem;
   margin-bottom: 1rem;
 }
