@@ -1,0 +1,64 @@
+/*==========0 GOOGLE FONTS ===========*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+
+  --first-color: hsl(30, 80%, 55%); /* Marrón cuero más cálido y vivo */
+  --first-color-alt: hsl(
+    30,
+    70%,
+    45%
+  ); /* Variante más oscura pero aún visible */
+  --title-color: hsl(210, 10%, 15%); /* Azul grisáceo oscuro para títulos */
+  --text-color: hsl(210, 10%, 30%); /* Gris azulado para texto */
+  --text-color-light: hsl(210, 5%, 50%); /* Gris suave */
+  --body-color: hsl(42, 30%, 95%); /* Beige muy claro para fondo */
+  --container-color: hsl(42, 30%, 98%); /* Aún más claro para contenedores */
+}
+body {
+  background: var(--body-color);
+}
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 16rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.banner__container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4); /*transaparencia*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.banner__title,
+.banner__description {
+  color: #fff;
+  text-align: center;
+  padding-inline: 5rem;
+}
+.banner__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
